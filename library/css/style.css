@@ -5,7 +5,7 @@
         scroll-behavior: smooth;
       }
       body {
-        background: linear-gradient(#f0eddfe6, #f0eddfe6) ,url(../../assets/noise.jpeg) repeat;
+        background: linear-gradient(#dad7cbe6, #dad7cbe6) ,url(../../assets/noise.jpeg) repeat;
       }
       .shdw {
         border-radius: 10px;
