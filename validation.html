@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GTHFN - Validation</title>
+    <link rel="stylesheet" href="Library/bootsrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="library/css/style.css" />
+    <link rel="stylesheet" href="library/contact-css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/525fab1625.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body class="animate__animated animate__fadeIn">
+    <div
+      class="container d-flex justify-content-center align-items-center w-90" style="height: 670px"
+    >
+      <div class="row shdw-active" style="height: 450px">
+        <div class="col-1 d-flex flex-column shdw1 w-100 h-100">
+          <div
+            class="container-fluid justify-content-center d-flex flex-row mt-4"
+            style="height: 50px"
+          >
+            <div
+              class="col-5 h-100 d-flex align-items-center justify-content-center"
+              style="color: #212121"
+            >
+              <h3>Contact Us!</h3>
+            </div>
+          </div>
+            <div class="mb-3">
+              
+              <form
+              action="https://formspree.io/f/mvolyger"
+              method="POST"
+              enctype="multipart/form-data"
+            >
+              <div class="col-12">
+                <label class="mt-3 col-12">
+                  Your email
+                <input type="email" name="Email" class="border-input mb-2 mt-2 col-12" placeholder="@mail.com" required>
+
+                </label>
+
+              </div>
+              <div class="col-12">
+                <label class="mt-3 col-12">
+                  Your name
+                <input type="text" name="Name" class="border-input mb-2 mt-2 col-12" placeholder="Mark" required>
+
+                </label>
+
+              </div>
+              <label class="mt-3 col-12">
+                Your message
+              <textarea name="Message" class="col-12 mb-2 mt-2 border-input" style="height: 30px;" placeholder="Insert message" required></textarea>
+
+              </label>
+              <!-- your other form fields go here -->
+              <button type="submit" class="col-6 shdw btn float-start mt-3">Send</button>
+              <a type="submit" href="index.html" class="col-6 float-end btn a-h mt-3">Cancel</a>
+
+            </form>
+        </div>
+      </div>
+    </div>
+	<script src="valid.js"></script>
+    <script src="/Library/bootsrap/js/bootstrap.bundle.js"></script>
+    <!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree -->
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+
+  </body>
+</html>

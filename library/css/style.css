@@ -5,7 +5,7 @@
         scroll-behavior: smooth;
       }
       body {
-        background: linear-gradient(#eae7d9e6, #eae7d9e6) ,url(../../assets/noise.jpeg) repeat;
+        background: linear-gradient(#e3e0d3e6, #eae7d9e6) ,url(../../assets/noise.jpeg) repeat;
       }
       .shdw {
         border-radius: 10px;
@@ -22,7 +22,7 @@
       }
       .shdw:hover {
         box-shadow: #2e2314 0px 4px 0px 0px;
-        transition: 0ms ease;
+        transition: 0.1s ease;
       }
       .secondary{
           color: #2e2314;
@@ -51,9 +51,18 @@
       font-weight: 1000;
       color: #2e2314;
     }
+    .a-h{
+      text-decoration: underline;
+    }
+    .a-h:hover{
+      text-decoration: none;
+    }
     .w-80{
         width: 80%;
     }
+    .w-90{
+      width: 90%;
+  }
     .imgscale img:hover{
       transform: scale(1.2);
     }
