@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="Library/bootsrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/525fab1625.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body class="animate__animated animate__fadeIn pt-5">
+    <div
+      class="container d-flex justify-content-center align-items-center mt-5"
+    >
+      <div class="row" style="height: 500px">
+        <div class="col-1 d-flex flex-column shdw1 w-100 h-100">
+          <div
+            class="container-fluid justify-content-center d-flex flex-row mt-4"
+            style="height: 50px"
+          >
+            <div
+              class="col-5 h-100 d-flex align-items-center justify-content-center"
+              style="color: #212121"
+            >
+              <h3>Login</h3>
+            </div>
+          </div>
+          <form
+            class="login_form p-4"
+            action="index.html"
+            method="post"
+            name="form"
+            onsubmit="return email_validated()"
+          >
+            <div class="mb-3">
+              <label for="email" class="form-label">Name</label>
+              <input
+                autocomplete="off"
+                type="text"
+                name="email"
+                class="form-control"
+                required
+              />
+              <div id="emailHelp" class="form-text">
+                We'll never share your Name with anyone else.
+              </div>
+              <div id="email_error">Please fill up your Name up to 8</div>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                name="password"
+                required
+              />
+              <div id="pass_error">Please fill up your Password up to 5</div>
+            </div>
+            <div class="d-flex flex-row d-flex justify-content-around">
+              <div class="col-6 mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input me-2"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+              <div class="col-6 d-flex justify-content-end">
+                <a
+                  href=""
+                  style="color: #212121; font-weight: 400; float: left"
+                  class="hovera"
+                  >Forgot Password</a
+                >
+              </div>
+            </div>
+            <div
+              class="row d-flex flex-row mt-4 justify-content-around"
+              style="height: 100px"
+            >
+              <button
+                href="#"
+                class="col-5 shdw h-50 d-flex background align-items-center justify-content-center me-1 btn"
+                style="color: white; cursor: pointer; text-decoration: none"
+                onclick="email_validated()"
+                ><h5>Submit</h5></button
+              >
+              <a
+                href="#"
+                class="col-5 h-50 d-flex align-items-center justify-content-center hovera"
+                style="color: #212121; cursor: pointer"
+                ><h5>Cancel</h5></a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+	<script src="valid.js"></script>
+    <script src="/Library/bootsrap/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
